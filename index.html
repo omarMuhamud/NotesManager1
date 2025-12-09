@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Notes Manager</title>
+    <style>
+        /* Basic styling for demonstration */
+        body { font-family: sans-serif; padding: 20px; }
+        #notes-container { margin-top: 20px; }
+        .note { 
+            border: 1px solid #769a1b; 
+            padding: 10px; 
+            margin-bottom: 10px; 
+            display: flex; 
+            justify-content: space-between;
+            align-items: center;
+        }
+        .delete-btn { 
+            background-color: #1a1360; 
+            color: white; 
+            border: none; 
+            padding: 5px 10px; 
+            cursor: pointer; 
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Advanced Notes</h1>
+    
+    <textarea id="note-input" placeholder="Type your new note here..." rows="4" cols="50"></textarea>
+    <button id="add-note-btn">Add Note</button>
+
+    <div id="notes-container">
+        <h2>Your Saved Notes</h2>
+    </div>
+
+    <script type="module" src="script.js"></script> 
+</body>
+</html>
